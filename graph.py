@@ -48,8 +48,8 @@ def visualize(df):
 
 
     fig = make_subplots(rows=2, cols=1, shared_xaxes=True,
-                vertical_spacing=0.01,
-                row_heights=[0.5, 0.2])
+                vertical_spacing=0.25, # !!
+                row_heights=[1.5, 1])  # !!
 
 
     fig.add_trace(go.Candlestick(x=df.index,
@@ -63,13 +63,14 @@ def visualize(df):
                     name='Volume'),
             row=2, col=1)
 
+    fig.update_yaxes(title_text="Volume", row=2, col=1)
 
     fig.update_layout(
         yaxis_title='Stock Price ($)',
-        xaxis_title='Time(utc+3)',
-        xaxis_rangeslider_visible=True, template='plotly_dark')
-
-    fig.update_yaxes(title_text="Volume", row=2, col=1)
+        # xaxis_title='Time', # (utc+3)
+        xaxis_rangeslider_visible=True, template='plotly_dark',
+        legend=dict( orientation="h", yanchor="bottom", y=1.0, xanchor="right", x=1 ) # !!
+        )
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -82,7 +83,7 @@ def visualize(df):
     #         colorscale='reds', 
     #         showscale=True
     #     ))
-    f.update_layout(title='ROE',
+    f.update_layout(yaxis_title='ROE (%)', # !!
                     yaxis_zeroline=False, xaxis_zeroline=False, xaxis_rangeslider_visible=True)
     st.plotly_chart(f, use_container_width=True)
 
