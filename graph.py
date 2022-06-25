@@ -35,9 +35,8 @@ def candles(symbol, interval, limit):
     for column in df.columns:
         df[column] = df[column].astype(float)
 
-    df['roe'] = df.apply(lambda x: ((x.high - x.low) / x.low) * 100, axis=1)
-    df['prev_open'] = df['open'].shift(1)
-    df['roe'] = df.apply(lambda x: -x.roe if x.close < x.prev_open else x.roe, axis=1)
+    df['roe'] = df.apply(lambda x: ((x.close - x.open) / x.open) * 100, axis=1) 
+    
     df['cumroe'] = df['roe'].cumsum()
     return df
 
