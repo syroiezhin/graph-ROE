@@ -36,8 +36,11 @@ def candles(symbol, interval, limit):
         df[column] = df[column].astype(float)
 
     df['roe'] = df.apply(lambda x: ((x.close - x.open) / x.open) * 100, axis=1) 
-    
     df['cumroe'] = df['roe'].cumsum()
+    
+    df['roelow'] = df.apply(lambda x:  x.cumroe - (((x.close - x.low) / x.open) * 100) if x.close < x.open else x.cumroe - (((x.open - x.low) / x.open) * 100), axis=1)
+    df['roehigh'] = df.apply(lambda x: x.cumroe + (((x.high - x.open) / x.open) * 100) if x.close < x.open else x.cumroe + (((x.high - x.close) / x.open) * 100), axis=1)
+
     return df
 
 
@@ -57,6 +60,9 @@ def visualize(df):
     fig.update_yaxes(title_text="ROE (%)", row=2, col=1)
     fig.add_trace(go.Bar(x=df.index, y=df['volume'], opacity=0.5, marker_color=colors, name='Volume'), row=3, col=1)
     fig.update_yaxes(title_text="Volume", row=3, col=1)
+
+    fig.add_trace(go.Scatter(x=df.index, y=df['roelow'], line=dict(color='#ffa226'), name='low'), row=2, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['roehigh'], line=dict(color='#81E349'), name='high'), row=2, col=1)
 
     fig.update_layout(
         height=750,
