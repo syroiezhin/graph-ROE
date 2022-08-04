@@ -1,6 +1,6 @@
-from streamlit import set_page_config, sidebar, write, selectbox, form_submit_button, plotly_chart # share.streamlit.io
-from plotly.graph_objects import Candlestick, Scatter, Bar
-from pandas import DataFrame, Timedelta, to_datetime
+import streamlit as st # set_page_config, sidebar, write, selectbox, form_submit_button, plotly_chart # share.streamlit.io
+import plotly.graph_objects  as go # Candlestick, Scatter, Bar
+import pandas as pd # DataFrame, Timedelta, to_datetime
 from tradingview_ta import TA_Handler, Interval
 from plotly.subplots import make_subplots
 from time import strftime, localtime
@@ -17,11 +17,11 @@ def candles(symbol, interval, limit):
     url = 'https://fapi.binance.com/fapi/v1/klines'
     params = {'symbol': symbol, 'interval': interval, 'limit': limit}
     r = get(url, params=params)
-    df = DataFrame(r.json())
+    df = pd.DataFrame(r.json())
     df = df[[0, 1, 2, 3, 4, 5]]
     df.columns = ['date', 'open', 'high', 'low', 'close', 'volume']
-    df['date'] = to_datetime(df['date'], unit='ms')
-    df['date'] = df['date'] + Timedelta(hours=3)
+    df['date'] = pd.to_datetime(df['date'], unit='ms')
+    df['date'] = df['date'] + pd.Timedelta(hours=3)
     df = df.set_index('date')
 
     for column in df.columns:
@@ -40,26 +40,26 @@ def visualize(df):
         else 'green' for index, row in df.iterrows()]
 
     fig = make_subplots(rows=3, cols=1, shared_xaxes=True, vertical_spacing=0.03, row_heights=[0.40, 0.40, 0.20])
-    fig.add_trace(Candlestick(x=df.index, open=df['open'], high=df['high'], low=df['low'], close=df['close'], name='candles'))
-    fig.add_trace(Scatter(x=df.index, y=df['cumroe'], line=dict(color='#D7311B', width=3), name='ROE'), row=2, col=1)
+    fig.add_trace(go.Candlestick(x=df.index, open=df['open'], high=df['high'], low=df['low'], close=df['close'], name='candles'))
+    fig.add_trace(go.Scatter(x=df.index, y=df['cumroe'], line=dict(color='#D7311B', width=3), name='ROE'), row=2, col=1)
     fig.update_yaxes(title_text="ROE (%)", row=2, col=1)
-    fig.add_trace(Bar(x=df.index, y=df['volume'], opacity=0.5, marker_color=colors, name='Volume'), row=3, col=1)
+    fig.add_trace(go.Bar(x=df.index, y=df['volume'], opacity=0.5, marker_color=colors, name='Volume'), row=3, col=1)
     fig.update_yaxes(title_text="Volume", row=3, col=1)
-    fig.add_trace(Scatter(x=df.index, y=df['roelow'], line=dict(color='#ffa226'), name='low'), row=2, col=1)
-    fig.add_trace(Scatter(x=df.index, y=df['roehigh'], line=dict(color='#81E349'), name='high'), row=2, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['roelow'], line=dict(color='#ffa226'), name='low'), row=2, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['roehigh'], line=dict(color='#81E349'), name='high'), row=2, col=1)
     fig.update_layout( height=750, yaxis_title='Stock Price ($)', xaxis_rangeslider_visible=True, xaxis_rangeslider_thickness=0.01, xaxis_rangeslider_bgcolor='#1b86d7', template='plotly_dark', legend=dict( orientation="h", yanchor="bottom", y=1.0, xanchor="right", x=1 ) )
 
-    plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
 
 def chart_settings(COINS):
-    set_page_config(page_title="Binance Chart", layout="wide", page_icon="📈", initial_sidebar_state="expanded")
+    st.set_page_config(page_title="Binance Chart", layout="wide", page_icon="📈", initial_sidebar_state="expanded")
 
-    with sidebar.form(key ='data_options'):
-        write("Options")
-        coin = selectbox('coin', COINS)
-        interval = selectbox("interval", ('1m', '5m', '15m', '1h', '1d', '1w', '1M'))
-        limit = selectbox("limit", ('60', '300', '600', '1200', '1500')) # .text_input('limit')
-        submitted = form_submit_button("Submit")
+    with st.sidebar.form(key ='data_options'):
+        st.write("Options")
+        coin = st.selectbox('coin', COINS)
+        interval = st.selectbox("interval", ('1m', '5m', '15m', '1h', '1d', '1w', '1M'))
+        limit = st.selectbox("limit", ('60', '300', '600', '1200', '1500')) # .text_input('limit')
+        submitted = st.form_submit_button("Submit")
     return coin, interval, limit, submitted
         
 def signal(symbol):
