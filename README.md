@@ -10,7 +10,7 @@
 - [X] Don't forget to download VSCode.
 - [X] Now let's do two important things before downloading the libraries!
 1. Go to the anaconda application in the __Environment__ section:
-[![vscode]](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
-[![conda]](https://youtu.be/x9gu31F1Rc4)
+<iframe width="428" height="428" src="https://youtube.com/shorts/xrf1rZpjkVc?feature=share" frameborder="0" allowfullscreen></iframe>
 
+<iframe width="720" height="734" src="https://youtu.be/x9gu31F1Rc4" frameborder="0" allowfullscreen></iframe>
 [⇪](#UP)
