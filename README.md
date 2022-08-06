@@ -31,5 +31,12 @@ pip install time
 1. First of all, you need to clone my repository on __your github account__.
 2. Next, login to the __Streamlit__ site with a __github account__ and create _the first application_ on the [share.streamlit.io](share.streamlit.io) site, referring to __your github__ clone of your project.
 3. Returning to the __VSCode__, you need to run the program __*.py__ in the upper right corner, and then in the terminal _(after reading the appeal)_, copy the command to run, pasting it in the terminal.
+```
+  Warning: to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run /Users/v.syroiezhin/Desktop/github/graph-ROE/GROE.py [ARGUMENTS]
+```
+> In my case, I will send the command to the terminal to launch the page `streamlit run /Users/../graph-ROE/GROE.py`
 
 [⇪](#UP)
