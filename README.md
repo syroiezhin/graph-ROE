@@ -30,7 +30,7 @@ pip install time
 > If any errors occur, try to solve them by searching the Internet for a solution. Perhaps something has changed, or you haven't downloaded the pip installer.
 
 - [X] To start the program, it remains to do the last three points:
-1. First of all, you need to clone my repository on __your github account__.
+1. First of all, you need to clone my repository on __your github account__. After cloning run the project folder via __VSCode__.
 
 ![Click on Open with Github Desktop](https://github.com/syroiezhin/graph-ROE/blob/main/image/github.png "Click on Open with Github Desktop")
 
