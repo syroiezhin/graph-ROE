@@ -15,6 +15,6 @@
 
 2. now we need to include the new __interpreter__: [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
 
-> Open the python project in __VSCode__, then select the __Python__ version in the lower right corner, then in the window that appears, find the newly created __interpreter__.
+> Open the __*.py__ project in __VSCode__, then select the __Python__ version in the lower right corner, then in the window that appears, find the newly created __interpreter__.
 
 [⇪](#UP)
