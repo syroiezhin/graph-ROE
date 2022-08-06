@@ -9,13 +9,23 @@
 - [X] First of all, I recommend downloading [Anaconda 2.2.0](https://anaconda.cloud/installers).
 - [X] Don't forget to download [VSCode 1.70.0](https://code.visualstudio.com/Download).
 - [X] Download latest [Python 3.10.6](https://www.python.org/downloads/macos/)
-- [X] Now let's do two important things before downloading the libraries!
+- [X] Now let's do two important things before downloading the libraries:
 
 1. Go to __the Anaconda__ application in the __Environment__ section and create a new environment [Conda](https://www.youtube.com/watch?v=x9gu31F1Rc4)
 > Need to create a new __interpreter__ with the newest __Python 3.10.4__ for __Anaconda__.
 
 2. Now we need to include the new __interpreter__ in [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
 > Open the __*.py__ project in __VSCode__, then in the lower right corner click on the __Python version__ _(in my case it is 3.9.12)_, then in the window that appears, find the newly created __interpreter__ _(in my case the name of __conda__)_.
+- [X] Great, now we __download all the libraries__ used through the __VSCode terminal__:
+```
+conda install -c plotly plotly
+conda install streamlit
+pip install tradingview_ta
+pip install requests
+pip install pandas
+pip install time
+```
+> If any errors occur, try to solve them by searching the Internet for a solution. Perhaps something has changed, or you haven't downloaded the pip installer.
 
 - [X] To start the program, it remains to do the last three points:
 1. First of all, you need to clone my repository on __your github account__.
