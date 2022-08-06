@@ -2,7 +2,7 @@
 
 > Please note that I do not advertise or advise buying cryptocurrency, this review is written for informational purposes, and not to promote investing in a digital currency that has no growth prospects, except for speculating on investors' investments.
 
-## <p align="center">Give thanks:&ensp;&ensp; <textarea onfocus="this.select()">5168 7450 1701 5535</textarea> &ensp;&ensp;<a href="https://en.privatbank.ua/all-ways-to-receive-send-an-international-transfer"><img src="https://upload.wikimedia.org/wikipedia/uk/f/ff/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9F%D1%80%D0%B8%D0%B2%D0%B0%D1%8224.png" width = "25" alt="Privat Bank UA"> </a></p>
+## <p align="center">Give thanks:&ensp;&ensp; 5168 7450 1701 5535 &ensp;&ensp;<a href="https://en.privatbank.ua/all-ways-to-receive-send-an-international-transfer"><img src="https://upload.wikimedia.org/wikipedia/uk/f/ff/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9F%D1%80%D0%B8%D0%B2%D0%B0%D1%8224.png" width = "25" alt="Privat Bank UA"> </a></p>
 
 ### In this review, I will not focus on how these two programs, made by me on the basis of ready-made packages, work. I want to make it clear how to run this package using anaconda on your macbook in order to receive signals from the program, and at your discretion to carry out any additional manipulations to improve this program. I see no prospects in this matter and there is no point in improving the program, as I did it out of curiosity, and gain experience in these arithmetic and design packages.
 
