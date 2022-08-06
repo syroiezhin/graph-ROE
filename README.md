@@ -10,14 +10,10 @@
 - [X] Don't forget to download VSCode.
 - [X] Now let's do two important things before downloading the libraries!
 0. Download latest [Python 3.10.6](https://www.python.org/downloads/macos/)
-1. Go to __the Anaconda__ application in the __Environment__ section:
-
-[Conda](https://www.youtube.com/watch?v=x9gu31F1Rc4&ab_channel=ValerijSyroiezhin)
-
+1. Go to __the Anaconda__ application in the __Environment__ section: [Conda](https://www.youtube.com/watch?v=x9gu31F1Rc4&ab_channel=ValerijSyroiezhin)
 > Need to create a new __interpreter__ with the newest __Python 3.10.4__ for __Anaconda__.
-2. now we need to include the new __interpreter__:
 
-[VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
+2. now we need to include the new __interpreter__: [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
 
 > Open the python project in __VSCode__, then select the __Python__ version in the lower right corner, then in the window that appears, find the newly created __interpreter__.
 
