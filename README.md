@@ -17,7 +17,7 @@
 
 2. Now we need to include the new __interpreter__ in [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
 ![Click on __the-Python-version__ in VSCode](https://github.com/syroiezhin/graph-ROE/blob/main/image/vscode.png "Click on the-Python-version in VSCode")
-> Open the `GROE.py` project in __VSCode__, then in the lower right corner click on the __Python version__ _(in my case it is 3.9.12)_, then in the window that appears, find the newly created __interpreter__ _(in my case the name of __conda__)_.
+> Open the `GROE.py` project in __VSCode__, then in the lower right corner click on the __Python version__ _(in my case it is 3.9.12)_, then in the window that appears, find the newly created __interpreter__ _(in my case the name of __conda 3.10.4__)_.
 - [X] Great, now we __download all the libraries__ used through the __VSCode terminal__:
 ```
 conda install -c plotly plotly
