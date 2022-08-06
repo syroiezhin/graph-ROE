@@ -38,6 +38,8 @@ pip install time
 
 ![Click New-app button in Streamlit site](https://github.com/syroiezhin/graph-ROE/blob/main/image/streamlit.png "Click New-app button in Streamlit site")
 
+> .. or click __Paste-GitHub-URL__ button, and enter the URL to my repository.
+
 3. Returning to the __VSCode__, you need to run the program `GROE.py` in the upper right corner, and then in the terminal _(after reading the appeal)_, copy the command to run, pasting it in the terminal.
 ```
   Warning: to view this Streamlit app on a browser, run it with the following command:
