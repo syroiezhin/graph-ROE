@@ -36,7 +36,7 @@ pip install time
 
 2. Next, login to the __Streamlit__ site with a __github account__ and create _the first application_ on the [share.streamlit.io](https://share.streamlit.io/) site, referring to __your github__ clone of your project.
 
-![Click New-app button in Streamlit site](https://github.com/syroiezhin/graph-ROE/blob/main/image/github.png "Click New-app button in Streamlit site")
+![Click New-app button in Streamlit site](https://github.com/syroiezhin/graph-ROE/blob/main/image/streamlit.png "Click New-app button in Streamlit site")
 
 3. Returning to the __VSCode__, you need to run the program `GROE.py` in the upper right corner, and then in the terminal _(after reading the appeal)_, copy the command to run, pasting it in the terminal.
 ```
