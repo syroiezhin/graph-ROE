@@ -7,10 +7,12 @@
 ### In this review, I will not focus on how these two programs, made by me on the basis of ready-made packages, work. I want to make it clear how to run this package using anaconda on your macbook in order to receive signals from the program, and at your discretion to carry out any additional manipulations to improve this program. I see no prospects in this matter and there is no point in improving the program, as I did it out of curiosity, and gain experience in these arithmetic and design packages.
 
 - [X] First of all, I recommend downloading [Anaconda](https://anaconda.cloud/installers).
-- [X] Don't forget to download VSCode.
-- [X] Now let's do two important things before downloading the libraries!
+- [X] Don't forget to download [VSCode](https://code.visualstudio.com/Download).
+- [X] Now let's do three important things before downloading the libraries!
+
 0. Download latest [Python 3.10.6](https://www.python.org/downloads/macos/)
-1. Go to __the Anaconda__ application in the __Environment__ section and create a new environment [Conda](https://www.youtube.com/watch?v=x9gu31F1Rc4)
+
+2. Go to __the Anaconda__ application in the __Environment__ section and create a new environment [Conda](https://www.youtube.com/watch?v=x9gu31F1Rc4)
 > Need to create a new __interpreter__ with the newest __Python 3.10.4__ for __Anaconda__.
 
 2. Now we need to include the new __interpreter__ in [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
