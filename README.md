@@ -1,4 +1,4 @@
-# <p id="UP">Do you want to create a bot to analyze the cryptocurrency market?</p>
+# <p id="UP">Do you want to create a bot to analyze the cryptocurrency?</p>
 
 > Please note that I do not advertise or advise buying cryptocurrency, this review is written for informational purposes, and not to promote investing in a digital currency that has no growth prospects, except for speculating on investors' investments.
 
