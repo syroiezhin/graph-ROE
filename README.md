@@ -17,7 +17,7 @@
 
 2. Now we need to include the new __interpreter__ in [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
 ![Click on the __Python version__  in VSCode](https://github.com/syroiezhin/graph-ROE/blob/main/image/vscode.png "Click on the Python version in VSCode")
-> Open the __*.py__ project in __VSCode__, then in the lower right corner click on the __Python version__ _(in my case it is 3.9.12)_, then in the window that appears, find the newly created __interpreter__ _(in my case the name of __conda__)_.
+> Open the `GROE.py` project in __VSCode__, then in the lower right corner click on the __Python version__ _(in my case it is 3.9.12)_, then in the window that appears, find the newly created __interpreter__ _(in my case the name of __conda__)_.
 - [X] Great, now we __download all the libraries__ used through the __VSCode terminal__:
 ```
 conda install -c plotly plotly
@@ -35,7 +35,7 @@ pip install time
 ![Click on Open with Github Desktop](https://github.com/syroiezhin/graph-ROE/blob/main/image/github.png "Click on Open with Github Desktop")
 
 2. Next, login to the __Streamlit__ site with a __github account__ and create _the first application_ on the [share.streamlit.io](https://share.streamlit.io/) site, referring to __your github__ clone of your project.
-3. Returning to the __VSCode__, you need to run the program __*.py__ in the upper right corner, and then in the terminal _(after reading the appeal)_, copy the command to run, pasting it in the terminal.
+3. Returning to the __VSCode__, you need to run the program `GROE.py` in the upper right corner, and then in the terminal _(after reading the appeal)_, copy the command to run, pasting it in the terminal.
 ```
   Warning: to view this Streamlit app on a browser, run it with the following command:
 
