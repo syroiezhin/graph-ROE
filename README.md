@@ -15,6 +15,6 @@
 > Need to create a new __interpreter__ with the newest __Python 3.10.4__ for __Anaconda__.
 
 2. Now we need to include the new __interpreter__ in [VSCode](https://youtube.com/shorts/xrf1rZpjkVc?feature=share)
-> Open the __*.py__ project in __VSCode__, then in the lower right corner click on the __Python version__ (_in my case it is 3.9.12_), then in the window that appears, find the newly created __interpreter__ (_in my case the name of conda_).
+> Open the __*.py__ project in __VSCode__, then in the lower right corner click on the __Python version__ _(in my case it is 3.9.12)_, then in the window that appears, find the newly created __interpreter__ _(in my case the name of __conda__)_.
 
 [⇪](#UP)
