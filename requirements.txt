@@ -1,0 +1,6 @@
+tradingview_ta
+streamlit
+requests
+plotly
+pandas
+time
